@@ -32,4 +32,4 @@ dx run /path/to/install/apps/vcf_merger \
   -imerged_vcf_filename=my_data_merged.vcf.gz \
   -y
 ```
-See [`dx run`](https://documentation.dnanexus.com/user/helpstrings-of-sdk-command-line-utilities#run) on chaning job priority etc.
+See [`dx run`](https://documentation.dnanexus.com/user/helpstrings-of-sdk-command-line-utilities#run) on changing job priority etc.
