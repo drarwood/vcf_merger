@@ -32,6 +32,6 @@ Note priority is set to high below which is recommended for long processes to av
 dx run /path/to/install/apps/vcf_merger \
   -ivcf_file_list=/path/to/vcf/file/list.txt \
   -imerged_vcf_filename=my_data_merged.vcf.gz \
-  --priority=high \
+  --priority high \
   -y
 ```
