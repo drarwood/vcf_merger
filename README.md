@@ -25,11 +25,13 @@ Navigate to the RAP directory where you want the output to be directed:
 ```
 dx cd /path/to/where/the/output/should/go
 ```
-Simply run the applet by specifying the name (and path if required) of the `*.vcf.gz` input VCF and the filename of the output GDS (note priority is set to high):
+Simply run the applet by specifying the name (and path if required) of the `*.vcf.gz` input VCF and the filename of the output GDS.
+Note priority is set to high below which is recommended for long processes to avoid jobs potentially being reset when running as normal priority jobs:
+
 ```
 dx run /path/to/install/apps/vcf_merger \
   -ivcf_file_list=/path/to/vcf/file/list.txt \
   -imerged_vcf_filename=my_data_merged.vcf.gz \
-  --priority high \
+  --priority=high \
   -y
 ```
