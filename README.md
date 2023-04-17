@@ -25,11 +25,11 @@ Navigate to the RAP directory where you want the output to be directed:
 ```
 dx cd /path/to/where/the/output/should/go
 ```
-Simply run the applet by specifying the name (and path if required) of the `*.vcf.gz` input VCF and the filename of the output GDS:
+Simply run the applet by specifying the name (and path if required) of the `*.vcf.gz` input VCF and the filename of the output GDS (note priority is set to high):
 ```
 dx run /path/to/install/apps/vcf_merger \
   -ivcf_file_list=/path/to/vcf/file/list.txt \
   -imerged_vcf_filename=my_data_merged.vcf.gz \
+  --priority high \
   -y
 ```
-See [`dx run`](https://documentation.dnanexus.com/user/helpstrings-of-sdk-command-line-utilities#run) on changing job priority etc.
